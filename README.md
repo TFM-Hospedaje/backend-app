@@ -8,6 +8,17 @@ _https://app-hospedaje.herokuapp.com/_
 
 Este desarrollo web surge para digitalizar el proceso de reserva de habitaciones para un hospedaje, cuyo control de clientes y bookings se realizaba en papel.
 
+La hoja de ruta del usuario en la aplicación es la siguiente:
+
+- El usuario puede entrar como invitado, o crear una cuenta personal
+- El acceso como invitado permite acceder a las secciones de información del Hospedaje, así como envío de mails al propietario, con el fin de aclarar dudas.
+- Para crear una cuenta, el usuario deberá darle al botón de registro, e introducir sus credenciales debidamente.
+- Una vez creado el usuario, el sistema enviará un mensaje con un link al email que ha introducido, para que de de alta su nueva cuenta.
+- (_El sistema de mailing de Google a veces da problemas de seguridad al tratar de acceder desde una cuenta externa. En este caso, es necesario contactarme para habilitar una configuración que no me deja establecer por defecto)_
+- Al acceder al correo y pulsar el link, el usuario será redireccionado a la página principal, ya con su cuenta.
+- Una vez dentro, el usuario podrá navegar por los diferentes menús de la aplicación, realizar búsquedas, reservas, editar su información personal,enviar mensajes a los propietarios...
+
+
 Para el desarrollo de la parte del servidor, se ha utilizado Express como capa de negocio, y MongoDB como base de datos..
 
 Express es un framework web transigente, escrito en JavaScript y alojado dentro del entorno de ejecución NodeJS. En este proyecto, se ha utilizado como servidor web, donde se aloja toda la capa lógica de la aplicación.
